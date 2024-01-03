@@ -1,4 +1,4 @@
-# Number-guessing-game
+# Question-generator-game-for-friends
 
 Just a simple question generator game. It chooses amongst the questions given to it and displays it. It's meant to be a game to play between friends, to get to know each other better. 
 
