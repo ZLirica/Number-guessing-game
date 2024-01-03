@@ -7,7 +7,7 @@ def choose_question(my_dict):
     # Initialize a set to keep track of chosen keys
     chosen_keys = set()
 
-    while chosen_keys != set(keys_list):
+    for player in players:
         # Choose a random key from the list
         random_key = random.choice(keys_list)
 
@@ -20,11 +20,7 @@ def choose_question(my_dict):
             random_value = my_dict[random_key]
 
             # Assign the value to the player
-            players[player] = random_value
-
-
-            # Return the chosen value
-            yield random_value
+            print(f"{player} got: {random_value}")
 
 questions = {'1': "What's your favourite color?",
              '2': "Where were you born?",
@@ -50,6 +46,8 @@ while True:
   else: 
       print("Use your eyes to read please -_-")
 
+player_names = [input(f"Enter name for player {i + 1}: ") for i in range(players)]
 
+choose_question(questions, player_names)
 
 
