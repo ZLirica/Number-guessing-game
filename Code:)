@@ -50,4 +50,7 @@ player_names = [input(f"Enter name for player {i + 1}: ") for i in range(players
 
 choose_question(questions, player_names)
 
+print("There are no more questions... If you're that interested in each other, maybe a friendship status is not the right one to have...")
+
+
 
