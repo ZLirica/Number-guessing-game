@@ -1,14 +1,13 @@
 import random
 
-def choose_question(my_dict):
-    # Get a list of all keys in the dictionary
+def random_question(my_dict):
+    
     keys_list = list(my_dict.keys())
 
-    # Initialize a set to keep track of chosen keys
     chosen_keys = set()
 
     for player in players:
-        # Choose a random key from the list
+        
         random_key = random.choice(keys_list)
 
         # Check if the key has not been chosen before
@@ -16,7 +15,7 @@ def choose_question(my_dict):
             # Add the chosen key to the set
             chosen_keys.add(random_key)
 
-            # Get the corresponding value
+            
             random_value = my_dict[random_key]
 
             # Assign the value to the player
